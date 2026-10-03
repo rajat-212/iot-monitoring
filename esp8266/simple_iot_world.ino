@@ -59,7 +59,7 @@ const char* password = "12345678";
  * Example: const char* serverURL = "https://simple-iot-world.onrender.com";
  * Or for local testing: const char* serverURL = "http://192.168.1.100:10000";
  */
-const char* serverURL = "";
+const char* serverURL = "https://iot-monitoring-5dbd.onrender.com";
 
 // Configurable Device Key for secure communication
 const char* deviceKey = "rajat_iot_secret_key_2026";

@@ -73,7 +73,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Timezone Helper (Asia/Kolkata +5:30)
 function getKolkataTimeInfo(date = new Date()) {
   const d = new Date(date);
-  
+
   // Format Date: DD-MM-YYYY
   const dateFormatted = d.toLocaleDateString('en-GB', {
     timeZone: 'Asia/Kolkata',
@@ -510,10 +510,10 @@ app.use((err, req, res, next) => {
 // Start Server on 0.0.0.0
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`====================================================`);
-  console.log(`🌿 SIMPLE IOT WORLD - Server Running`);
-  console.log(`👨‍💻 Developed by: Rajat Raut and Team`);
-  console.log(`🏫 Dept of ETC, SB Jain Institute, Nagpur`);
-  console.log(`🌐 Server listening on http://0.0.0.0:${PORT}`);
-  console.log(`🔑 Device Key: ${DEVICE_KEY}`);
+  console.log(` SIMPLE IOT WORLD - Server Running`);
+  console.log(` Developed by: Rajat Raut and Team`);
+  console.log(` Dept of ETC, SB Jain Institute, Nagpur`);
+  console.log(` Server listening on http://0.0.0.0:${PORT}`);
+  console.log(` Device Key: ${DEVICE_KEY}`);
   console.log(`====================================================`);
 });
