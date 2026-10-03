@@ -1,0 +1,9 @@
+{
+  "displayLine1": "hello",
+  "displayLine2": "55",
+  "led": false,
+  "lastSeen": null,
+  "online": false,
+  "lastTemperature": 32.5,
+  "lastHumidity": 55
+}

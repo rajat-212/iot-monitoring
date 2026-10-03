@@ -1,0 +1,190 @@
+/*
+ * SIMPLE IOT WORLD - MODERN GREEN DESIGN SYSTEM
+ * Developer: Rajat Raut | Dept of ETC, SB Jain, Nagpur
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root {
+  --primary-green: #10b981;
+  --primary-emerald: #059669;
+  --primary-lime: #84cc16;
+  --dark-bg: #09130e;
+  --dark-card: #0f2319;
+  --dark-border: #1a3c2c;
+  --light-bg: #f3fbf6;
+  --light-card: #ffffff;
+  --light-border: #d1fae5;
+  --lcd-bg: #2d5537;
+  --lcd-text: #b6f5c8;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom animated pulse for heart icon */
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.pulse-heart {
+  display: inline-block;
+  animation: heartPulse 1.8s infinite ease-in-out;
+  color: #ef4444;
+  vertical-align: middle;
+}
+
+/* Glowing LED Styles */
+.led-bulb-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.led-bulb {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.led-on {
+  background: radial-gradient(circle, #86efac 0%, #22c55e 60%, #15803d 100%);
+  color: #ffffff;
+  box-shadow: 0 0 25px #22c55e,
+              0 0 50px #16a34a,
+              0 0 80px rgba(34, 197, 94, 0.6);
+  animation: ledGlowPulse 2.5s infinite alternate;
+}
+
+.led-off {
+  background: radial-gradient(circle, #64748b 0%, #334155 70%, #1e293b 100%);
+  color: #94a3b8;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes ledGlowPulse {
+  0% {
+    box-shadow: 0 0 25px #22c55e, 0 0 45px #16a34a, 0 0 70px rgba(34, 197, 94, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 35px #4ade80, 0 0 65px #22c55e, 0 0 100px rgba(34, 197, 94, 0.85);
+  }
+}
+
+/* Realistic 16x2 Dot Matrix LCD Preview Screen */
+.lcd-bezel {
+  background: #1e293b;
+  border: 4px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.7), 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  max-width: 100%;
+}
+
+.lcd-screen {
+  background-color: #24462c;
+  background-image: linear-gradient(rgba(0, 255, 100, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 255, 100, 0.05) 1px, transparent 1px);
+  background-size: 4px 4px;
+  border: 2px solid #142819;
+  border-radius: 6px;
+  padding: 14px 20px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.85);
+}
+
+.lcd-text-line {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 1.25rem;
+  letter-spacing: 0.22em;
+  color: #9cf5b3;
+  text-shadow: 0 0 8px rgba(156, 245, 179, 0.7);
+  white-space: pre;
+  min-height: 1.75rem;
+  font-weight: 700;
+}
+
+/* Custom seek bars / Gauge indicators */
+.gauge-track {
+  width: 100%;
+  height: 14px;
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gauge-fill-temp {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #eab308, #ef4444);
+  border-radius: 9999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gauge-fill-hum {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #10b981, #059669);
+  border-radius: 9999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Modern Tab Active Border Effect */
+.tab-active {
+  border-bottom: 3px solid #10b981;
+  color: #10b981 !important;
+}
+
+/* Responsive Table styling */
+.custom-table th {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}

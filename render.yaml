@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: simple-iot-world
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DEVICE_KEY
+        value: rajat_iot_secret_key_2026

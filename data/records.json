@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rec_1772635200001",
+    "temperature": 31.5,
+    "humidity": 58.0,
+    "timestamp": "2026-10-03T14:40:00.000Z",
+    "time": "08:10 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772635800002",
+    "temperature": 32.0,
+    "humidity": 57.5,
+    "timestamp": "2026-10-03T14:50:00.000Z",
+    "time": "08:20 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772636400003",
+    "temperature": 32.8,
+    "humidity": 56.0,
+    "timestamp": "2026-10-03T15:00:00.000Z",
+    "time": "08:30 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772637000004",
+    "temperature": 33.2,
+    "humidity": 55.0,
+    "timestamp": "2026-10-03T15:10:00.000Z",
+    "time": "08:40 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772637600005",
+    "temperature": 34.0,
+    "humidity": 54.0,
+    "timestamp": "2026-10-03T15:20:00.000Z",
+    "time": "08:50 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772638200006",
+    "temperature": 34.5,
+    "humidity": 53.5,
+    "timestamp": "2026-10-03T15:30:00.000Z",
+    "time": "09:00 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772638800007",
+    "temperature": 33.8,
+    "humidity": 54.2,
+    "timestamp": "2026-10-03T15:40:00.000Z",
+    "time": "09:10 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772639400008",
+    "temperature": 33.0,
+    "humidity": 55.5,
+    "timestamp": "2026-10-03T15:50:00.000Z",
+    "time": "09:20 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772640000009",
+    "temperature": 32.5,
+    "humidity": 56.5,
+    "timestamp": "2026-10-03T16:00:00.000Z",
+    "time": "09:30 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772640600010",
+    "temperature": 32.5,
+    "humidity": 55.0,
+    "timestamp": "2026-10-03T16:10:00.000Z",
+    "time": "09:40 PM",
+    "date": "03-10-2026"
+  },
+  {
+    "id": "rec_1772641200011",
+    "temperature": 32.2,
+    "humidity": 55.8,
+    "timestamp": "2026-10-03T16:14:00.000Z",
+    "time": "09:44 PM",
+    "date": "03-10-2026"
+  }
+]

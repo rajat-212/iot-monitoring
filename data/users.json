@@ -1,0 +1,9 @@
+[
+  {
+    "id": "usr_rajat_001",
+    "name": "Rajat Raut",
+    "email": "rajat@iot.com",
+    "passwordHash": "$2a$10$vq2OWVe5ADTUdciKu9ZJ3ulobBY5pNn29FKoRpZI6saq9bRhn4DIC",
+    "createdAt": "2026-10-03T16:00:00.000Z"
+  }
+]
